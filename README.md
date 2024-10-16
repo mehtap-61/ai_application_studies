@@ -1,4 +1,4 @@
-# yapay_zeka_uygulamalar
+# Yapay_zeka_uygulamalari
 
 Python programı ile  verileri okuma 
 
