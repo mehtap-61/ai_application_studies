@@ -1,27 +1,51 @@
 f=figure;hold on;
+
 set(f,'defaultLineLineWidth',2);
+
 syms w x y z;
+
  w=x*x+y*y-z;
+ 
 dwdx=diff(w,x);
+
 dwdy=diff(w,y);
+
 dwdz=diff(w,z);
+
 z=solve(w,z);
+
 ezsurf(z,[-1,1]);
+
 noktax=0.4;
+
 noktay=0.3;
+
 noktaz=subs(subs(z,x,noktax),y,noktay);
+
 scatter3(noktax,noktay,noktaz);
+
 gradx=subs(dwdx,x,noktax);
+
 grady=subs(dwdy,y,noktay);
+
 gradz=subs(dwdz,z,noktaz);
+
 quiver3(noktax,noktay,noktaz,gradx,0,0);
+
 quiver3(noktax,noktay,noktaz,0,grady,0);
+
 quiver3(noktax,noktay,noktaz,0,0,gradz);
+
 quiver3(noktax,noktay,noktaz,gradx,grady,gradz);
+
 xlim([-1 1]);
+
 ylim([-1 1]);
+
 zlim([-1 1]);
+
 view(151,8);
+
 axis equal;
 
 duyarlilik=0.01;
