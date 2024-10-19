@@ -107,6 +107,9 @@ while iniseDevam && adimSayisi<maxAdimSayisi
         end
     end
 end
+
 view(170,-4); 
+
 fprintf('Atılan adım sayısı: %i\n',adimSayisi);
+
 fprintf('Minimum nokta: (%f,%f)\n',nokta(1),nokta(2));
