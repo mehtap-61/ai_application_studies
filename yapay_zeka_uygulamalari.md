@@ -13,3 +13,9 @@ Python programı ile  50_startups.csv dosyasındaki verileri okuma
 Okunan verileri tablosal görüntüleme
 
 Okunan verilerden eksik olan değerler var ise bunun çoklu veri arasından çekilmesi şeklinde farklı işlemler yapma
+
+2.Uygulama içeriği
+
+Üç boyutlu gradient descente yönelik belli komutlar yazmak
+
+Online matlabda gradient descente yönelik üç boyutlu grafik elde etmek (önceki hali-son halolarak iki grafik)
